@@ -13,10 +13,27 @@ body {
 	line-height: 28px;
 	background:url(./image/stardust.png);
 }
+/*photos*/
 img{
 border-radius:100px;
-
-
+}
+.me{
+float:right;
+width:600px;
+height:400px;
+}
+/*區塊們*/
+.home{
+height: 100%;
+width: 100%;
+}
+.aboutme{
+height: 100%;
+width: 100%;
+}
+.photo{
+height: 100%;
+width: 100%;
 }
 p {
 	margin-bottom: 14px;
@@ -47,12 +64,13 @@ table {
 /*navigation*/
 
 .nav_section {
-	height: 90px;
+	height: 0px;
 	background-repeat: no-repeat;
 	background-position: left bottom;
 }
 
 .navigation_item {
+    margin:0px 0px 0px 0px;
     border-bottom:solid;
 	float: right;
 	width: 200px;
