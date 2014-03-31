@@ -1,6 +1,6 @@
 $(function(){
 	$('#he').click(function(){
-		$('html,body').animate({scrollTop: $('#home').offset().top}, 600);
+		$('html,body').animate({scrollTop: 0}, 600);
 	}); 
 	
 	$('#am').click(function(){
@@ -8,10 +8,10 @@ $(function(){
 	});
 	
 	$('#pt').click(function(){
-		$('html,body').animate({scrollTop:$('#photo').offset().top}, 600);
+		$('html,body').animate({scrollTop:$('#contact').offset().top}, 600);
 	});
 	$('#he1').click(function(){
-		$('html,body').animate({scrollTop: $('#home').offset().top}, 600);
+		$('html,body').animate({scrollTop:0}, 600);
 	}); 
 	
 	$('#am1').click(function(){
@@ -19,10 +19,10 @@ $(function(){
 	});
 	
 	$('#pt1').click(function(){
-		$('html,body').animate({scrollTop:$('#photo').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#contact').offset().top}, 800);
 	});
 	$('#he2').click(function(){
-		$('html,body').animate({scrollTop: $('#home').offset().top}, 300);
+		$('html,body').animate({scrollTop:0},600);
 	}); 
 	
 	$('#am2').click(function(){
@@ -30,6 +30,7 @@ $(function(){
 	});
 	
 	$('#pt2').click(function(){
-		$('html,body').animate({scrollTop:$('#photo').offset().top}, 800);
+		$('html,body').animate({scrollTop:$('#contact').offset().top}, 800);
 	});
 });
+
