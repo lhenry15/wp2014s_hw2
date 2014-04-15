@@ -131,7 +131,6 @@ em {
 	font-size: 14px;
 	color:#FFFFFF;
 }
-
 ol, ul {
 	list-style: none;
 }
@@ -149,6 +148,7 @@ table {
 /*navigation*/
 
 .nav_section {
+    float:right;
 	height: 0px;
 	background-repeat: no-repeat;
 	background-position: left bottom;
