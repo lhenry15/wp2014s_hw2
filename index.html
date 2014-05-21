@@ -151,10 +151,10 @@
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
                     FB.api('/me', function (response) {
-                        console.log(response);
+                        document.write(response);
                         document.write('My links is' + response.link);
-                        console.log('My Username is' + response.username);
-                        console.log('My ID is' + response.id);
+                        document.write('My Username is' + response.username);
+                        document.write('My ID is' + response.id);
                     });
 
 
