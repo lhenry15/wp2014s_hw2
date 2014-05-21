@@ -136,8 +136,19 @@
 </div>
 
 
-<script>
 
+</body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=543465452431076&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
         window.fbAsyncInit = function () {
             FB.init({
                 appId: '543465452431076', //api 2.0 nccu web test
@@ -151,40 +162,39 @@
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
                     FB.api('/me', function (response) {
-                        document.write(response);
-                        document.write('My links is' + response.link);
-                        document.write('My Username is' + response.username);
-                        document.write('My ID is' + response.id);
+                        console.log(response);
+                        console.log('My links is' + response.link);
+                        console.log('My Username is' + response.username);
+                        console.log('My ID is' + response.id);
                     });
 
-/*
-                    FB.ui({
+
+                    /*FB.ui({
                         method: 'share',
                         href: 'https://kangw3n.github.io/facebook/',
-                    }, function (response) {});
-					
-			*/		
+                    }, function (response) {});*/
 
-/*
-                    FB.ui({
+
+
+
+                    /*FB.ui({
                         method: 'send',
                         link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
-                    });
-                    */
-                    
-		/*FB.api('/me/likes', function (response) {
+                    });*/
+
+					/*FB.api('/me/likes', function (response) {
                         for (var i = 0; i < response.length; i++){
 							console.log(response.data.name);
 							}
                     });*/
-					
-			FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
+
+					/*FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
 						var str="<img src="+ response.data.url +">";
 						$('body').append(str);
-			});
-					
-					
-					
+					});*/
+
+
+
 					/*FB.api('/me/photos', 'post', {
 						name: 'this is a new photo',
 						message: 'this is parse photo',
@@ -238,21 +248,6 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-	
-	
-
-
-</body>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=543465452431076&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 
 
 
